@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-export default function Home() {
+export default function Signup() {
   return (
     <>
       <div className="h-screen w-screen overflow-hidden relative"> 
@@ -10,7 +10,8 @@ export default function Home() {
           className="h-full w-full object-cover opacity-50 absolute top-0 left-0 z-0" 
         />
         <div className="relative z-10 flex items-center justify-center h-full px-4">
-          <div className="bg-white w-full max-w-sm md:max-w-lg lg:max-w-2xl rounded-xl opacity-95 shadow-2xl p-6 md:p-10">
+          <div className="bg-white w-full max-w-sm md:max-w-lg lg:max-w-2xl rounded-xl opacity-95 shadow-2xl p-6 md:p-10 max-h-[100vh]">
+
            
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <img src="/Logo.png" alt="Logo" className="w-16 h-16 sm:w-20 sm:h-20"/>
@@ -23,13 +24,13 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="mt-3 text-center pt-10">
+            <div className="mt-3 text-center pt-5">
               <p className="text-gray-600 text-sm sm:text-base">
-                Sign in or create an account to get personalized health insights.
+                Create an account to get personalized health insights.
               </p>
             </div>
 
-            <div className="flex items-center justify-center border border-gray-300 rounded-xl gap-2 py-2 mt-6 cursor-pointer hover:bg-gray-100 transition">
+            {/* <div className="flex items-center justify-center border border-gray-300 rounded-xl gap-2 py-2 mt-6 cursor-pointer hover:bg-gray-100 transition">
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 40 48">
                 <path fill="#4285F4" d="M39.2 24.45c0-1.55-.16-3.04-.43-4.45H20v8h10.73c-.45 2.53-1.86 4.68-4 6.11v5.05h6.5c3.78-3.48 5.97-8.62 5.97-14.71z"/>
                 <path fill="#34A853" d="M20 44c5.4 0 9.92-1.79 13.24-4.84l-6.5-5.05C24.95 35.3 22.67 36 20 36c-5.19 0-9.59-3.51-11.15-8.23h-6.7v5.2C5.43 39.51 12.18 44 20 44z"/>
@@ -46,9 +47,18 @@ export default function Home() {
             <span className="px-4 text-gray-500 text-sm font-md">OR</span>
             <div className="flex-grow border-t border-gray-300"></div>
             </div>
-
+ */}
 
             <div className="mt-6">
+              <p className="text-gray-700 mb-2">Name</p>
+              <input 
+                type="text" 
+                placeholder="Shahnawaz hussain" 
+                className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#46827C]"
+              />
+            </div>
+
+            <div className="mt-4">
               <p className="text-gray-700 mb-2">Email</p>
               <input 
                 type="email" 
@@ -66,15 +76,27 @@ export default function Home() {
               />
             </div>
 
+            <div className="mt-4">
+              <p className="text-gray-700 mb-2">Confirm Password</p>
+              <input 
+                type="password" 
+                placeholder="Confirm password" 
+                className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#46827C]"
+              />
+            </div>
+
             <div className="mt-6 flex justify-center">
               <button className="w-full bg-[#46827C] text-white font-semibold py-2 rounded-lg hover:bg-[#356b66] transition">
-                Sign In
+                Create account
               </button>
             </div>
 
             <div className='text-center pt-5'>
                 <p className='text-gray-600 text-sm sm:text-base'>
-                    Don't have an account? <a href="/" className='text-[#46827C]'>Sign Up</a>
+                    Already have an account?{' '}
+                    <Link to="/login" className="text-[#46827C] font-medium hover:underline">
+                        Log in
+                    </Link>
                 </p>
             </div>
 
