@@ -15,7 +15,7 @@ export default function Login() {
            
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <img src="/Logo.png" alt="Logo" className="w-16 h-16 sm:w-20 sm:h-20"/>
-              <h1 className="font-sans font-black text-3xl sm:text-4xl text-[#46827C]">Mind-Z</h1>
+              <h1 className="font-sans italic font-black text-3xl sm:text-4xl text-[#46827C]">Mind-Z</h1>
             </div>
 
             <div className="mt-6 text-center">
