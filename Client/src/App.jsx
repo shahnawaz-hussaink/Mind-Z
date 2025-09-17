@@ -8,7 +8,6 @@ import Signup from './assets/Components/Pages/Signup'
 import Home from './assets/Components/Pages/Home'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
