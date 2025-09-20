@@ -6,6 +6,7 @@ import Login from './assets/Components/Pages/Login'
 import { BrowserRouter,Routes, Route } from "react-router-dom"
 import Signup from './assets/Components/Pages/Signup'
 import Home from './assets/Components/Pages/Home'
+import Profile from './assets/Components/Pages/Profile'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
+          <Route path="/profile" element={<Profile/>}/>
           <Route path='/' element={<Home/>} />
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<Signup />} />
