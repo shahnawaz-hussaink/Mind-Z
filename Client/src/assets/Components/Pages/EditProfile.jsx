@@ -1,6 +1,15 @@
 import Logo from "../SmallComponents/Logo";
-
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 export default function EditProfile() {
+  const navigate = useNavigate();
+
+  const cancelEdit= ()=>{
+    navigate(-1)
+  }
+  const saveChanges = ()=>{
+    navigate("/")
+  }
   return (
     <>
       <div className="min-h-screen w-full bg-[#F0FDFE] flex justify-center px-4 py-6">
@@ -113,12 +122,14 @@ export default function EditProfile() {
             <button
               type="reset"
               className="px-4 py-2 border border-gray-300 text-gray-600 rounded-md hover:bg-gray-100"
+              onClick={cancelEdit}
             >
               Cancel
             </button>
             <button
               type="submit"
               className="px-4 py-2 bg-teal-700 text-white rounded-md hover:bg-teal-800"
+              onClick={saveChanges}
             >
               Save Changes
             </button>
