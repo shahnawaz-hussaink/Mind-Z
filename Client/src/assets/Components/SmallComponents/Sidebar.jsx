@@ -43,7 +43,9 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
           </div>
           <div className="flex items-center py-2 px-3 hover:bg-gray-200 rounded-lg cursor-pointer transition">
             <FaInfoCircle className="text-xl" />
-            <span className="md:text-lg font-medium px-3">About Mind-Z</span>
+            <span className="md:text-lg font-medium px-3">
+              <Link to="/about">About Mind-Z</Link>
+              </span>
           </div>
         </nav>
 
