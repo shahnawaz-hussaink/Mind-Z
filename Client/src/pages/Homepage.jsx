@@ -1,5 +1,5 @@
-import Sidebar from "../SmallComponents/Sidebar";
-import WritingArea from "../SmallComponents/WritingArea";
+import Sidebar from "../components/Sidebar";
+import WritingArea from "../components/WritingArea";
 import { useState } from "react";
 
 export default function Home() {
