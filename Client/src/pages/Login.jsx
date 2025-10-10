@@ -40,6 +40,7 @@ const Login = () => {
 
   return (
     <div className="h-screen w-screen overflow-hidden relative"> 
+    
       {/* Background Image - replace with your actual background */}
       <div className="h-full w-full bg-gradient-to-br from-blue-50 to-teal-50 opacity-50 absolute top-0 left-0 z-0"></div>
       

@@ -40,6 +40,8 @@ import Homepage from './pages/Homepage';
 // import Profile from './pages/Profile';
 import About from './Pages/About';
 import ShareFeelings from './pages/ShareFeelings';
+import Chatpage from './pages/Chatpage';
+import Profile from './Pages/Profile';
 
 function App() {
   return (
@@ -52,7 +54,9 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/about" element={<About />} />
-             <Route path="/convo" element={<Conversations />} />
+            <Route path="/convo" element={<Conversations />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/chat" element={<Chatpage />} />
             <Route path="/share-feelings" element={<ShareFeelings />} /> {/*  later i hvae to add it into protected route */}
             
             {/* <Route 
@@ -63,9 +67,7 @@ function App() {
                 </ProtectedRoute>
               } 
             /> */}
-            
-            {/* Fallback route */}
-            <Route path="*" element={<Navigate to="/" />} />
+            <Route path="*" element={<Navigate to="/chat" />} />
           </Routes>
         </div>
       </Router>
