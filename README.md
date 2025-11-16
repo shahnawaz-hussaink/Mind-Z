@@ -2,9 +2,9 @@
 
 > **Supporting Wellness with Intelligent and Compassionate Technology**
 
-![Last Commit](https://img.shields.io/github/last-commit/your-username/mind-z)
-![Top Language](https://img.shields.io/github/languages/top/your-username/mind-z)
-![Languages Count](https://img.shields.io/github/languages/count/your-username/mind-z)
+![Last Commit](https://img.shields.io/github/last-commit/shahnawaz-hussaink/Mind-z)
+![Top Language](https://img.shields.io/github/languages/top/shahnawaz-hussaink/Mind-z)
+![Languages Count](https://img.shields.io/github/languages/count/shahnawaz-hussaink/Mind-z)
 
 ---
 
@@ -44,11 +44,7 @@
 ---
 
 ## 🚀 Live Demo & Code
-
-- **Live:** https://mind-z-live-link.com  
-- **GitHub:** https://github.com/your-username/mind-z
-
-> _Replace the `your-username`, `live-link`, and screenshot with your actual details._
+- **GitHub:** https://github.com/shahnawaz-hussaink/Mind-Z
 
 ---
 
