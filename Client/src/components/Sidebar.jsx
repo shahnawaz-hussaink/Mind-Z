@@ -1,4 +1,4 @@
-// src/components/Sidebar.jsx
+
 import { useState, useEffect } from "react";
 import { IoMdHome } from "react-icons/io";
 import { FaUserCircle, FaInfoCircle, FaRegSmile, FaLock } from "react-icons/fa";
@@ -14,7 +14,6 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
   const [conversations, setConversations] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  // Check if user is authenticated
   const isAuthenticated = () => {
     const token = localStorage.getItem('token') || localStorage.getItem('authToken');
     return !!token;
@@ -92,22 +91,18 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
 
   return (
     <>
-      {/* Overlay for mobile */}
       {isOpen && (
         <div
           className="fixed inset-0 bg-black/30 z-10 md:hidden"
           onClick={toggleSidebar}
         />
       )}
-      
-      {/* Sidebar */}
       <div
         className={`fixed top-0 left-0 h-full bg-[#F9FAFB] border-r border-gray-200 flex flex-col z-20
         transform transition-transform duration-300
         ${isOpen ? "translate-x-0" : "-translate-x-full"}
         md:translate-x-0 md:static md:w-64 w-64`}
       >
-        {/* Header */}
         <div className="flex justify-between items-center p-5 border-b border-gray-200 flex-shrink-0">
           <h1 className="italic font-black text-3xl text-[#46827C]">Mind-Z</h1>
           <button
@@ -118,7 +113,6 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
           </button>
         </div>
 
-        {/* User Info Section */}
         <div className="px-4 py-4 border-b border-gray-200 bg-white/50 flex-shrink-0">
           {isAuthenticated() && user ? (
             <div className="flex items-center gap-3">
@@ -215,7 +209,7 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
             </div>
           </div>
 
-          {/* Past Conversations / Example Topics */}
+          {/* Past Conversations/exmle topics */}
           <div className="px-3 py-4">
             <div className="flex items-center justify-between mb-3 px-3">
               <h2 className="text-gray-600 font-semibold text-xs uppercase tracking-wide">
@@ -226,7 +220,7 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
             
             <div className="space-y-2">
               {isAuthenticated() ? (
-                // Show actual user conversations
+                
                 <>
                   {loading ? (
                     <div className="text-center py-4">
@@ -253,7 +247,7 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
                   )}
                 </>
               ) : (
-                // Show example topics for guests
+                
                 <>
                   {guestExamples.map((title, idx) => (
                     <div
@@ -286,7 +280,6 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
             <span className="text-sm font-medium px-3 text-red-600">Emergency Help</span>
           </a>
           
-          {/* Logout - Only for authenticated users */}
           {isAuthenticated() && (
             <button 
               onClick={handleLogout}
@@ -300,8 +293,6 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
           )}
         </div>
       </div>
-
-      {/* Mobile Menu Button */}
       {!isOpen && (
         <button
           onClick={toggleSidebar}

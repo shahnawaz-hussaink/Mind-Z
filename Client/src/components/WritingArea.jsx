@@ -1,4 +1,3 @@
-// src/components/WritingArea.jsx
 import { Send, LockIcon, AlertCircle } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -7,7 +6,6 @@ export default function WritingArea({ onSendMessage }) {
   const [message, setMessage] = useState("");
   const [showGuestWarning, setShowGuestWarning] = useState(false);
 
-  // Check if user is authenticated
   const isAuthenticated = () => {
     const token = localStorage.getItem('token') || localStorage.getItem('authToken');
     return !!token;
@@ -123,7 +121,6 @@ export default function WritingArea({ onSendMessage }) {
         </div>
       </div>
 
-      {/* Add CSS for animation */}
       <style jsx>{`
         @keyframes fade-in {
           from {

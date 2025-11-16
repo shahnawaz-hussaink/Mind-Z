@@ -1,4 +1,4 @@
-// // src/pages/Chat.jsx
+
 // import React, { useState, useRef, useEffect } from 'react';
 // import { useAuth } from '../context/AuthContext';
 // import Sidebar from '../components/Sidebar';
