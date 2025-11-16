@@ -9,7 +9,7 @@
 ---
 
 ### 💬 Mind-Z Preview
-[![Screenshot](./mind-z.jpg)]((https://github.com/shahnawaz-hussaink/Mind-Z))
+[![Screenshot](./mind-z.png)]((https://github.com/shahnawaz-hussaink/Mind-Z))
 
 ---
 
